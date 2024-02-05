@@ -15,6 +15,9 @@ html,body{
     background-color: #212121;
 }
 nav {
+    background-image: url(./images/8e7cbcd6161fff3de4bff34a19a2d1f8.jpg);
+    background-size: 800px;
+    object-fit: cover;
     /* background-color: rgb(19, 68, 68); */
     width: 100%;
     height:15%;
@@ -22,13 +25,12 @@ nav {
     align-items: center;
     justify-content: flex-end;
     position: relative;
-    gap: 15px;
     box-shadow: #212121 0px 5px 20px;
 }
 #profile-pic{
     background-color: #fff;
     position: absolute;
-    right: 80%;
+    right: 70%;
     top: 10%;
     box-shadow: #212121 0px 5px 20px;
 }
@@ -39,6 +41,7 @@ nav a{
     cursor: pointer;
     color: rgb(42, 161, 165);
     margin-top: 15px;
+    margin-right: 50px;
     position: relative;
     right: 5%;
     font-size: 1.2vw;
@@ -60,9 +63,11 @@ img{
     border-radius: 50%;
 }
 #main{
+    /* background-image: url(./images/8e7cbcd6161fff3de4bff34a19a2d1f8.jpg);
+    background-size: 3500px; */
+    background-color: #141414;
     height: 100vh;
     width: 100%;
-    background-color: #a3a3a3;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -70,6 +75,5 @@ img{
 #img{
     width: 200px;
     height: 200px;
-    position: relative;
-  
+    position: relative;  
 }
