@@ -9,3 +9,7 @@
 //         pic.src = "images/icon.png"
 //     }
 // }
+const scroll = new LocomotiveScroll({
+    el: document.querySelector("#wrapper"),
+    smooth: true
+});
