@@ -83,7 +83,7 @@ html,body{
     width: 300px;
     height: 300px;
     position: absolute;
-    bottom: 84%;
+    bottom: 88%;
 }
 
 
@@ -125,7 +125,6 @@ html,body{
 
 
 
-
 #main h1{
     font-size: 12vh;
     cursor: default;
@@ -133,6 +132,7 @@ html,body{
     bottom: 10%;
     /* text-shadow: antiquewhite 0px 0px 100px; */
 }
+
 #main h3{
     color: #141414;
     font-size: 3vh;
@@ -171,13 +171,17 @@ html,body{
 #about-me{
     height: 100vh;
     width: 100%;
-    background-color: #c41a1a;
-    /* position: absolute; */
-    /* z-index: 10; */
+    background-color:#1B1B1B;
 }
 
-#page3{
+#Projects{
     height: 100vh;
     width: 100%;
-    background-color: #1aa2c4;
+    background-color:#141414;
+}
+
+#Contact-me{
+    height: 100vh;
+    width: 100%;
+    background-color:#1B1B1B;
 }
