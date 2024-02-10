@@ -2,7 +2,18 @@
     font-family: chullz;
     src: url(./fonts/Enoway-Personal\ Use.otf);
 }
-
+@font-face {
+    font-family: about;
+    src: url(./fonts/Utendo-Black.ttf);
+}
+@font-face {
+    font-family: detail;
+    src: url(./fonts/Utendo-Light.ttf);
+}
+@font-face {
+    font-family: links;
+    src: url(./fonts/Utendo-Regular.ttf);
+}
 *{
     margin: 0;
     padding: 0;
@@ -46,7 +57,6 @@ html,body{
 }
 #nav a{
     background-color:rgba(250, 235, 215, 0.021);
-
     text-decoration: none;
     text-align: center;
     cursor: pointer;
@@ -56,6 +66,7 @@ html,body{
     position: relative;
     right: 5%;
     font-size: 1.2vw;
+    font-family: links;
     /* border: 2px solid rgb(194, 193, 193); */
     padding: 10px 20px;
     border-radius: 50px;
@@ -77,7 +88,21 @@ html,body{
     z-index: 10;
     letter-spacing: 2px;
     font-weight: bold;
+}
+/* Explore btn on homepage */
 
+#explore-Btn{
+    top: 0%;
+    left: 0%;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color:#3f3f3f;
+    color:antiquewhite;
+    transition: all 0.3s ease;
+    z-index: 10;
+    letter-spacing: 2px;
+    font-weight: bold;
 }
 #nav a:hover{
     background-color:antiquewhite;
@@ -107,6 +132,7 @@ html,body{
     text-align: center;
     color: antiquewhite;
     flex-direction: column;
+    
 }
 #transparent-logo{
     width: 300px;
@@ -116,57 +142,7 @@ html,body{
 }
 
 
-/* BG particles  */
 
-
-#bg-particle{
-    height: 25vw;
-    width: 25vw;
-    position:fixed;
-    border-radius: 50%;
-    background: linear-gradient(to bottom,#FF9100, #ff91000e);
-    filter: blur(30px);
-    top: 20%;
-    animation-name: bgparticle ;
-    animation-duration: 3s;
-    animation-timing-function:ease;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    z-index: 9;
-}
-#bg-particle2{
-    height: 25vw;
-    width: 25vw;
-    position: absolute;
-    border-radius: 50%;
-    background: linear-gradient(to bottom,#FF9100, #ff91000e);
-    filter: blur(20px);
-    top: 20%;
-    animation-name: bgparticle2 ;
-    animation-duration: 5s;
-    animation-timing-function:ease;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    z-index: 9;
-}
-
-/* Keyframes of animation on BG particles */
-@keyframes bgparticle {
-    from{
-        transform:translate(-35%,0)
-    }
-    to{
-        transform:translate(35%,0)
-    }
-}
-@keyframes bgparticle2 {
-    from{
-        transform:skew(-30deg)
-    }
-    to{
-        transform:skew(30deg)
-    }
-}
 
 
 
@@ -201,6 +177,8 @@ html,body{
     color:#141414;
     scale: 1.050;
     text-shadow: antiquewhite 0px 0px 70px;
+    z-index: 10;
+
 }
 
 
@@ -237,6 +215,7 @@ html,body{
 }
 #main p{
     font-size: 3vh;
+    font-family: detail;
     position: relative;
     bottom: 22%;
     cursor: default;
@@ -247,13 +226,86 @@ html,body{
 
 
 
-/* Obout me Section */
+
+
+
+/* About me Section */
 #about-me{
-    height: 100vh;
+    height: 120vh;
     width: 100%;
     background-color:#1B1B1B;
+    padding: 80px 100px;
+    display: flex;
+    justify-content: center;
+
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    /* background-color:#be0e0e; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+    /* flex-wrap: wrap; */
+    position: relative;
+}
+#con-left{
+    position:relative;
+    height: 90vh;
+    width: 100%;
+    /* background-color:#0e4cbe; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#con-left img{
+    min-width: 90%;
+    border-radius: 30px;
+
+}
+#con-Right{
+    height: 90vh;
+    width: 100%;
+    margin-left: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    color: antiquewhite;
+    /* background-color:#be0ea1; */
+}
+#con-Right h1{
+    font-size: 8vh;
+    font-family: about;
+    
+
+}
+#con-Right #aboutme-detail{
+    color: antiquewhite;
+    font-family: detail;
+    letter-spacing: 2px;
     
 }
+
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+    color: antiquewhite;
+}
+.tab-links{
+    margin-right: 50px;
+    font-family: about;
+    font-size: 18px;
+    font-family: links;
+    cursor: pointer;
+    color: antiquewhite;
+    letter-spacing: 5px;
+}
+
+
 /* Project Section */
 
 #Projects{
@@ -268,3 +320,4 @@ html,body{
     width: 100%;
     background-color:#1B1B1B;
 }
+
