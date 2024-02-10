@@ -13,12 +13,14 @@ html,body{
     width: 100%;
     height: 100%;
     background-color: #141414d3;
+    scroll-behavior: smooth;
 }
 
 
+/* Nav section */
 
 #nav {
-    /* object-fit: cover; */
+    position: fixed;
     width: 50%;
     height:20vh;
     display: flex;
@@ -43,6 +45,8 @@ html,body{
     box-shadow: rgb(255, 145, 0) 0px -5px 0px;
 }
 #nav a{
+    background-color:rgba(250, 235, 215, 0.021);
+
     text-decoration: none;
     text-align: center;
     cursor: pointer;
@@ -57,6 +61,23 @@ html,body{
     border-radius: 50px;
     transition: all 0.3s ease;
     z-index: 10;
+    letter-spacing: 1px;
+}
+/* Explore btn on homepage */
+
+#explore-Btn{
+    top: 0%;
+    left: 0%;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color:#3f3f3f;
+    color:antiquewhite;
+    transition: all 0.3s ease;
+    z-index: 10;
+    letter-spacing: 2px;
+    font-weight: bold;
+
 }
 #nav a:hover{
     background-color:antiquewhite;
@@ -64,10 +85,18 @@ html,body{
     scale: 1.050;
     text-shadow: antiquewhite 0px 20px 50px;
 }
+#explore-Btn:hover{
+    
+    background-color: antiquewhite;
+    color:#141414;
+    scale: 1.050;
+    text-shadow: antiquewhite 0px 5px 50px;
+    font-weight: bolder;
+}
 
 
 
-
+/* Main Section */
 
 #main{
     background-color: #141414; 
@@ -87,8 +116,61 @@ html,body{
 }
 
 
+/* BG particles  */
 
 
+#bg-particle{
+    height: 25vw;
+    width: 25vw;
+    position:fixed;
+    border-radius: 50%;
+    background: linear-gradient(to bottom,#FF9100, #ff91000e);
+    filter: blur(30px);
+    top: 20%;
+    animation-name: bgparticle ;
+    animation-duration: 3s;
+    animation-timing-function:ease;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    z-index: 9;
+}
+#bg-particle2{
+    height: 25vw;
+    width: 25vw;
+    position: absolute;
+    border-radius: 50%;
+    background: linear-gradient(to bottom,#FF9100, #ff91000e);
+    filter: blur(20px);
+    top: 20%;
+    animation-name: bgparticle2 ;
+    animation-duration: 5s;
+    animation-timing-function:ease;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    z-index: 9;
+}
+
+/* Keyframes of animation on BG particles */
+@keyframes bgparticle {
+    from{
+        transform:translate(-35%,0)
+    }
+    to{
+        transform:translate(35%,0)
+    }
+}
+@keyframes bgparticle2 {
+    from{
+        transform:skew(-30deg)
+    }
+    to{
+        transform:skew(30deg)
+    }
+}
+
+
+
+/* Social BTNs  */
 #socails-btn{
     width: 50px;
     height: 200px;
@@ -107,12 +189,11 @@ html,body{
     top: 0;
     font-size: 3vh;
     color: antiquewhite;
+    background-color:rgba(250, 235, 215, 0.034);
     padding: 10px;
     transition: all 0.3s ease;
     border-radius: 50%;
     z-index: 10;
-    /* position: fixed; */
-
 }
 #socails-btn i:hover{
     background-color:antiquewhite;
@@ -125,60 +206,62 @@ html,body{
 
 
 
+
+
+/* Main text on homepage  */
+
 #main h1{
     font-size: 12vh;
     cursor: default;
     position: relative;
     bottom: 10%;
-    /* text-shadow: antiquewhite 0px 0px 100px; */
+    z-index: 10;
 }
-
+#main span{
+    color: rgb(255, 145, 0);
+    text-shadow: antiquewhite 0px 5px 2px;
+    letter-spacing: 5px;
+    z-index: 10;
+}
 #main h3{
     color: #141414;
     font-size: 3vh;
     padding: 0px 10px;
     margin: 30px;
     background-color: rgb(255, 145, 0);
-    /* background-image: linear-gradient(antiquewhite, rgb(247, 142, 5)); */
     text-shadow: antiquewhite 0px 5px 10px;
     cursor: default;
     position: relative;
-    bottom: 10%;
+    bottom: 14%;
+    z-index: 10;
 }
 #main p{
     font-size: 3vh;
     position: relative;
-    bottom: 10%;
+    bottom: 22%;
+    cursor: default;
+    letter-spacing: 1px;
     z-index: 10;
 }
-#bg-img{
-    position: fixed;
-    object-fit: cover;
-    bottom: 65%;
-    left: 0;
-    width: 100%;
-    z-index: 9;
-    filter: brightness(15%);
-    user-select: none;
-   -moz-user-select: none;
-   -webkit-user-drag: none;
-   -webkit-user-select: none;
-   -ms-user-select: none;
-}
 
 
 
+
+/* Obout me Section */
 #about-me{
     height: 100vh;
     width: 100%;
     background-color:#1B1B1B;
+    
 }
+/* Project Section */
 
 #Projects{
     height: 100vh;
     width: 100%;
     background-color:#141414;
 }
+/* Contact me Section */
 
 #Contact-me{
     height: 100vh;
