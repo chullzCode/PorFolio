@@ -1,18 +1,9 @@
 
 
-// let pic = document.getElementById("profile-pic")
-// function img(){
-//     // pic.src = "images/profolio.png","images/icon.png"
-//     if (pic.src.match("images/icon.png")){
-//         pic.src = "images/profolio.png"
-//     } else {
-//         pic.src = "images/icon.png"
-//     }
-// }
-const scroll = new LocomotiveScroll({
-    el: document.querySelector("#wrapper"),
-    smooth: true
-});
+// const scroll = new LocomotiveScroll({
+//     el: document.querySelector("#wrapper"),
+//     smooth: true
+// });
 
 
 
@@ -25,7 +16,8 @@ function openTab(tabname){
         tabLink.classList.remove("active-link")
     }
     for(tabContent of tabContents){
-        tabContents.classList.remove("active-Tab")
+        tabContent.classList.remove("active-Tab")
     }
     event.currentTarget.classList.add("active-link")
+    document.getElementById(tabname).classList.add("active-Tab")
 }

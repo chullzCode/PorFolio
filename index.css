@@ -18,7 +18,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: chullz;
+    font-family: about;
 }
 html,body{
     width: 100%;
@@ -28,7 +28,7 @@ html,body{
 }
 
 
-/* Nav section */
+/* --------------------------Nav section----------------------------- */
 
 #nav {
     position: fixed;
@@ -38,7 +38,7 @@ html,body{
     align-items: center;
     justify-content: flex-end;
     flex-direction: row;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     position: relative;
     left: 50%;
     bottom: 5%;
@@ -74,41 +74,31 @@ html,body{
     z-index: 10;
     letter-spacing: 1px;
 }
-/* Explore btn on homepage */
 
-#explore-Btn{
-    top: 0%;
-    left: 0%;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 50px;
-    background-color:#3f3f3f;
-    color:antiquewhite;
-    transition: all 0.3s ease;
-    z-index: 10;
-    letter-spacing: 2px;
-    font-weight: bold;
-}
-/* Explore btn on homepage */
-
-#explore-Btn{
-    top: 0%;
-    left: 0%;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 50px;
-    background-color:#3f3f3f;
-    color:antiquewhite;
-    transition: all 0.3s ease;
-    z-index: 10;
-    letter-spacing: 2px;
-    font-weight: bold;
-}
 #nav a:hover{
     background-color:antiquewhite;
     color:#141414;
     scale: 1.050;
     text-shadow: antiquewhite 0px 20px 50px;
+}
+
+
+
+
+/* Explore btn on homepage */
+
+#explore-Btn{
+    top: 0%;
+    left: 0%;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color:#3f3f3f;
+    color:antiquewhite;
+    transition: all 0.3s ease;
+    z-index: 10;
+    letter-spacing: 2px;
+    font-weight: bold;
 }
 #explore-Btn:hover{
     
@@ -120,8 +110,7 @@ html,body{
 }
 
 
-
-/* Main Section */
+/* --------------------------------------Main Section---------------------------------- */
 
 #main{
     padding: 0px 80px;
@@ -231,7 +220,7 @@ html,body{
 
 
 
-/* About me Section */
+/* -------------------------------About me Section ----------------------------*/
 #about-me{
     height: 120vh;
     width: 100%;
@@ -243,14 +232,17 @@ html,body{
 }
 .container{
     min-height: 100vh;
+    /* padding-left: 100px; */
     min-width: 100%;
     /* background-color:#be0e0e; */
     display: flex;
+    /* flex-direction: column; */
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
     z-index: 10;
     /* flex-wrap: wrap; */
     position: relative;
+
 }
 #con-left{
     position:relative;
@@ -261,6 +253,7 @@ html,body{
     /* flex-wrap: wrap; */
     align-items: center;
     justify-content: center;
+    
 
 }
 #con-left img{
@@ -282,19 +275,27 @@ html,body{
     color: antiquewhite;
     /* background-color:#be0ea1; */
 }
-#con-Right h1{
+.sub-title{
     font-size: 6vh;
     font-family: about;
-    flex-wrap: wrap;
-
+    /* flex-wrap: wrap; */
+    cursor: default;
 }
-#con-Right #aboutme-detail{
+#aboutme-detail{
     color: antiquewhite;
     font-family: detail;
     letter-spacing: 2px;
     flex-wrap: wrap;
-
-    
+    cursor: default;
+ 
+}
+#aboutme-detail span{
+    color: #FF9100;
+    font-family: detail;
+    letter-spacing: 2px;
+    flex-wrap: wrap;
+    cursor: default;
+ 
 }
 
 .tab-titles{
@@ -337,6 +338,7 @@ html,body{
     display: flex;
     flex-direction: column;
     display: none;
+    cursor: default;
 }
 .tab-contents.active-Tab{
     display: block;
@@ -351,9 +353,8 @@ html,body{
 }
 .tab-contents ul li span{
     color: antiquewhite;
-    font-size: 1vw;
+    font-size: 2vw;
     font-family: about;
-
     color: rgb(255, 145, 0);;
 }
 
@@ -361,18 +362,147 @@ html,body{
 
 
 
-/* Project Section */
+/* -------------------------------Project Section -----------------------*/
 
 #Projects{
-    height: 100vh;
+    height: 120vh;
     width: 100%;
+    /* padding: 50px 50px; */
     background-color:#141414;
+    color: antiquewhite;
+        /* display: flex;
+    flex-wrap: wrap;
+    flex-direction: column; */
+    /* position: relative;
+    display: flex;
+    flex-direction: column; */
 }
-/* Contact me Section */
+
+
+
+#project-Left{
+    padding-left: 100px;
+    position: relative;
+    right: 0;
+    height: 120vh;
+    width: 45%;
+    margin-left: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    color: antiquewhite;
+    /* background-color:#be0ea1; */
+}
+#project-Left .sub-title{
+    font-size: 6vh;
+    font-family: about;
+    /* flex-wrap: wrap; */
+    cursor: default;
+}
+#project-Left #aboutme-detail{
+    color: antiquewhite;
+    font-family: detail;
+    letter-spacing: 2px;
+    flex-wrap: wrap;
+    cursor: default;
+}
+#aboutme-detail span{
+    color: #FF9100;
+    font-family: detail;
+    letter-spacing: 2px;
+    flex-wrap: wrap;
+    cursor: default;
+}
+#aboutme-detail a{
+    font-family: links;
+    font-weight: bold;
+    color: #FF9100;
+    font-family: detail;
+    letter-spacing: 10px;
+    flex-wrap: wrap;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+#aboutme-detail a:hover{
+    /* background-color:antiquewhite; */
+    color:antiquewhite;
+    scale: 1.050;
+    text-shadow: antiquewhite 0px 0px 100px;
+}
+
+
+/*----------------------------------- Skill icons Section------------------------------------- */
+.project-list{
+    /* background: #000; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+    margin-top: 10px;
+    
+}
+#project-Left h1{
+    position: relative;
+    font-size: 6vh;
+    font-family: about;
+    margin-top: 40px;
+    /* flex-wrap: wrap; */
+    cursor: default;
+}
+#project-Left h3{
+    font-family: links;
+    cursor: default;
+    color: #FF9100;
+}
+#skill-icons{
+    width: 50px;
+    height: 100px;
+    display: flex;
+    flex-direction:row;
+    gap: 12px;
+    align-items: center;
+    z-index: 10;
+}
+#skill-icons i{
+    position: sticky;
+    top: 0;
+    font-size: 3vh;
+    color: antiquewhite;
+    background-color:rgba(250, 235, 215, 0.034);
+    padding: 10px;
+    transition: all 0.3s ease;
+    border-radius: 50%;
+    z-index: 10;
+}
+#skill-icons i:hover{
+    background-color:antiquewhite;
+    border-radius: 50%;
+    color:#141414;
+    scale: 1.050;
+    text-shadow: antiquewhite 0px 0px 70px;
+    z-index: 10;
+
+}
+#skill-icons img{
+    width: 80%;
+    color: aliceblue;
+}
+
+
+
+
+
+/*----------------------------------- Contact me Section------------------------------------- */
 
 #Contact-me{
     height: 100vh;
     width: 100%;
     background-color:#1B1B1B;
 }
+
+
+
+
 
