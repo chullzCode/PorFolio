@@ -125,12 +125,7 @@ html,body{
     flex-direction: column;
     
 }
-#transparent-logo{
-    width: 300px;
-    height: 300px;
-    position: absolute;
-    bottom: 50%;
-}
+
 
 
 
@@ -257,7 +252,7 @@ html,body{
 
 }
 #con-left img{
-    min-width: 100%;
+    min-width: 50%;
     border-radius: 150px;
 
 }
@@ -314,6 +309,12 @@ html,body{
     color: antiquewhite;
     letter-spacing: 5px;
     position: relative;
+    transition: all 0.3s ease;
+}
+.tab-links:hover{
+    color:#FF9100;
+    scale: 1.050;
+    text-shadow: antiquewhite 0px 0px 100px;
 }
 .tab-links::after{
     content: "";
@@ -442,6 +443,13 @@ html,body{
     position: relative;
     margin-top: 10px;
     
+}
+#transparent-logo{
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    left: 50%;
+    /* bottom: 50%; */
 }
 #project-Left {
     /* background: #726b6b; */
