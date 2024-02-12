@@ -509,7 +509,7 @@ html,body{
 #project-text h1{
     position: absolute;
     font-size: 6vh;
-    margin-top: 30px;
+    /* margin-top: 30px; */
     font-family: about;
     /* flex-wrap: wrap; */
     cursor: default;
@@ -532,9 +532,7 @@ html,body{
     position: relative;
     display: flex;
     justify-content: center;
-    /* margin-top: 200px; */
     gap: 100px;
-    margin-top: 50px;
     flex-wrap: wrap;
     /* background: #db1d1d; */
 }
@@ -543,13 +541,13 @@ html,body{
 height: 300px;
    width: 300px;
    position: relative;
-   /* top: 20%; */
    object-fit: cover;
    border-radius: 30px;
    filter: brightness(80%);
    transition: all 0.3s ease;
 
 }
+
 #project-con img:hover{
     scale: 1.030;
    filter: brightness(100%);
@@ -557,35 +555,9 @@ height: 300px;
 
 
 }
-#project-con h1{
-    position: relative;
-    bottom: 25%;
-    font-family: about;
-    letter-spacing: 2px;
-    cursor: default;
-    color: antiquewhite;
-}
-.project-info{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    position: absolute;
-    bottom: 30%;
-    cursor: default;
-
-}
-.project-info h3{
-    font-family: links;
-    letter-spacing: 2px;
-    color: #FF9100;
-    cursor: default;
-
-}
-.project-info p{
-    font-family: detail;
-    cursor: default;
-    color: antiquewhite;
-
+#project-con a{
+    height: 300px;
+    width: 300px;
 }
 
 /*----------------------------------- Contact me Section------------------------------------- */
