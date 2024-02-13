@@ -639,12 +639,29 @@ height: 300px;
     z-index: 10;
 }
 
-#contact-left a button{
-    position: absolute;
-    left: 0;
+
+#contact-Right form{
+    width: 80%;
+}
+form input,form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background-color: #1B1B1B;
+    padding: 15px;
+    margin: 15px 0;
+    color: antiquewhite;
+    font-size: 18px;
+    font-family: links;
+    border-radius: 6px;
+    resize: none;
+}
+#contact-Right button{
+    position: relative;
+    left: 30%;
     font-size: 1vw;
     padding: 10px 100px;
-    margin-top: 100px;
+    /* margin-top: 100px; */
     border-radius: 20px;
     color: antiquewhite;
     font-family: detail;
@@ -658,9 +675,23 @@ height: 300px;
 }
 
 
-#contact-left a button:hover{
+#contact-Right button:hover{
     background-color:antiquewhite;
     color:#141414;
     scale: 1.020;
     text-shadow: antiquewhite 0px 20px 50px;
+}
+#copyright{
+    height: 5vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3f3f3f;
+    letter-spacing: 10px;
+}
+#copyright h2{
+    color: antiquewhite;
+    font-family: detail;
+    font-size: 1.5vw;
 }
