@@ -1,9 +1,9 @@
 
 
-const scroll = new LocomotiveScroll({
-    el: document.querySelector("#wrapper"),
-    smooth: true
-});
+// const scroll = new LocomotiveScroll({
+//     el: document.querySelector("#wrapper"),
+//     smooth: true
+// });
 
 
 

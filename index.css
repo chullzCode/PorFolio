@@ -164,7 +164,6 @@ html,body{
     scale: 1.050;
     text-shadow: antiquewhite 0px 0px 70px;
     z-index: 10;
-
 }
 
 
@@ -571,5 +570,94 @@ height: 300px;
     min-height: 100vh;
     width: 100%;
     background: #141414;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+#contact-left{
+    height: 100vh;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 200px;
+    cursor: default;
+    position: relative;
+    /* background: #000; */
+    /* align-items: center; */
+}
+#contact-left h1{
+    color: #FF9100;
+    letter-spacing: 3px;
+    margin-top: 50px;
+    font-size: 3vw;
+    
+}
+#contact-left i{
+    color: #FF9100;
+    font-size: 1.5vw;
+    margin-right: 10px;
+ 
+}
+#contact-left p{
+    color: antiquewhite;
+    font-family: detail;
+    letter-spacing: 3px;
+    margin-top: 50px;
+
+}
+#contact-socail-icons{
+    height: 10vh;
+    width: 50%;
+    position: relative;
+    /* background: #aa0d0d; */
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    gap: 20px;
+    margin-top: 50px;
+}
+#contact-socail-icons i{
+    position: relative;
+    font-size: 4vh;
+    color: antiquewhite;
+    background-color:rgba(250, 235, 215, 0.034);
+    padding: 10px;
+    transition: all 0.3s ease;
+    border-radius: 50%;
+    z-index: 10;
+}
+#contact-socail-icons i:hover{
+    background-color:antiquewhite;
+    border-radius: 50%;
+    color:#141414;
+    scale: 1.050;
+    text-shadow: antiquewhite 0px 0px 70px;
+    z-index: 10;
 }
 
+#contact-left a button{
+    font-size: 1vw;
+    padding: 10px 100px;
+    margin-top: 50px;
+    border-radius: 20px;
+    color: antiquewhite;
+    font-family: detail;
+    font-weight: bold;
+    letter-spacing: 5px;
+    background-color: #FF9100;
+    cursor: pointer;
+    background-color:rgba(250, 235, 215, 0.021);
+    text-decoration: none;
+    transition: all 0.3s ease
+}
+
+
+#contact-left a button:hover{
+    background-color:antiquewhite;
+    color:#141414;
+    scale: 1.020;
+    text-shadow: antiquewhite 0px 20px 50px;
+}
