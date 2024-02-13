@@ -558,6 +558,8 @@ height: 300px;
 #project-con a{
     height: 300px;
     width: 300px;
+   border-radius: 30px;
+
 }
 
 /*----------------------------------- Contact me Section------------------------------------- */
