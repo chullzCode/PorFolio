@@ -298,7 +298,7 @@ html,body{
     display: flex;
     margin: 20px 0 40px;
     color: antiquewhite;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 
 }
 .tab-links{
@@ -659,10 +659,9 @@ form input,form textarea{
     resize: none;
 }
 #contact-Right button{
-    position: relative;
-    left: 30%;
+
     font-size: 1vw;
-    padding: 10px 100px;
+    padding: 10px 50px;
     /* margin-top: 100px; */
     border-radius: 20px;
     color: antiquewhite;
@@ -706,7 +705,7 @@ form input,form textarea{
 
 
 /* --------------------CSS for small screens---------------------- */
-@media only screen and (max-width: 1400px)  {
+@media only screen and (max-width: 1500px)  {
     /* --------------------------Nav section----------------------------- */
     #nav {
         width: 50%;
@@ -813,10 +812,7 @@ form input,form textarea{
 
 /* --------------------CSS for Smaller screens---------------------- */
 
-
-
-
-@media only screen and (max-width: 1200px)  {
+@media only screen and (max-width: 1080px)  {
     #nav {
         width: 50%;
     }
@@ -850,10 +846,25 @@ form input,form textarea{
     }
 
     #con-left{
-        /* position: absolute; */
-        right: 7%;
+        right: 6%;
         width: 25%;
     }
+
+
+
+/* -------------------------------About me Section ----------------------------*/
+
+#about-me{
+    width: 100%;
+
+}
+
+#con-left{
+    width: 30%;
+}
+
+
+
 
 /* -------------------------------Project Section -----------------------*/
 
@@ -863,7 +874,9 @@ form input,form textarea{
 
 
 /*----------------------------------- Skill icons Section------------------------------------- */
-
+    #project-Left {
+    width: 80%;
+    }
 
     #project-Left h1{
         font-size: 5vh;
@@ -879,10 +892,10 @@ form input,form textarea{
 
 
     #contact-left{
-        width: 50%;
+        width: 60%;
     }
     #contact-left h1{
-        font-size: 4vw;
+        font-size:4vw;
     }
     #contact-left i{
         font-size: 1.5vw;
@@ -893,6 +906,267 @@ form input,form textarea{
     }
 
     #contact-socail-icons i{
-        font-size: 4vh;
+        font-size: 3vh;
+    }
+    #contact-Right form{
+        width: 90%;
+    }
+}
+
+
+
+/* --------------------CSS for Tablet screens---------------------- */
+
+@media only screen and (max-width: 850px)  {
+    #nav {
+        width: 40%;
+    }
+    #profile-pic{
+        width: 70%;
+    }
+    #nav a{
+        font-size: 2vw;
+        left:20%;
+        z-index: 10;
+    }
+    /* Social BTNs  */
+
+    #socails-btn i{
+    font-size: 3vh;
+    }
+/* Main text on homepage  */
+
+    #main h1{
+        font-size: 5vh;
+    }
+
+    #main h3{
+        margin: 50px;
+    }
+    #main p{
+        font-size: 2vh;
+    }
+
+
+
+
+/* -------------------------------About me Section ----------------------------*/
+
+#about-me{
+    height: 120vh;
+    width: 100%;
+    padding: 0px 100px;
+
+}
+
+#con-left{
+    width: 25%;
+}
+.sub-title{
+    font-size: 4vh;
+    font-family: about;
+    cursor: default;
+}
+#aboutme-detail{
+    width: 100%;
+    letter-spacing: 2px;
+    font-size: 2vw;
+ 
+}
+.tab-links{
+    font-size: 15px;
+    letter-spacing: 5px;
+}
+
+/* Tab information section  */
+
+
+.tab-contents ul li{
+   margin: 30px 0;
+   letter-spacing: 5px;
+
+}
+.tab-contents ul li span{
+    font-size: 3vw;
+}
+/* -------------------------------Project Section -----------------------*/
+
+    #project-Left .sub-title{
+        font-size:5vh;
+    }
+
+
+/*----------------------------------- Skill icons Section------------------------------------- */
+    #project-Left {
+    width: 80%;
+    }
+
+    #project-Left h1{
+        font-size: 5vh;
+    }
+
+    #skill-icons img{
+        width: 90%;
+    }
+
+
+
+
+/*----------------------------------- Contact me Section------------------------------------- */
+
+
+    #contact-left{
+        width: 60%;
+        right: 10%;
+    }
+    #contact-left h1{
+        font-size:4vw;
+    }
+    #contact-left i{
+        font-size: 1.5vw;
+    }
+    #contact-left p{
+        letter-spacing: 5px;
+        font-size: 1.5vw;
+    }
+
+    #contact-socail-icons i{
+        font-size: 3vh;
+    }
+    #contact-Right form{
+        width: 95%;
+    }
+}
+
+
+/* --------------------CSS for Mobile screens---------------------- */
+
+@media only screen and (max-width:716px)  {
+    #nav {
+        width: 40%;
+    }
+    #profile-pic{
+        width: 70%;
+    }
+    #nav a{
+        font-size: 2vw;
+        left:20%;
+        z-index: 10;
+    }
+    /* Social BTNs  */
+
+    #socails-btn i{
+    font-size: 3vh;
+    }
+/* Main text on homepage  */
+
+    #main h1{
+        font-size: 5vh;
+    }
+
+    #main h3{
+        margin: 50px;
+    }
+    #main p{
+        font-size: 2vh;
+    }
+
+
+
+
+/* -------------------------------About me Section ----------------------------*/
+
+#about-me{
+    height: 120vh;
+    width: 100%;
+    padding: 0px 100px;
+
+}
+
+#con-left{
+    width: 25%;
+    display: none;
+}
+#about-me .sub-title{
+    font-size: 6vh;
+    position: relative;
+    right: 35%;
+ 
+}
+#about-me #aboutme-detail{
+    width: 200%;
+    letter-spacing: 2px;
+    font-size: 3vw;
+    position: relative;
+    right: 35%;
+    margin-bottom: 20px;
+ 
+}
+.tab-links{
+    font-size: 15px;
+    letter-spacing: 5px;
+    position: relative;
+    right: 18%;
+
+}
+
+/* Tab information section  */
+
+
+.tab-contents ul li{
+   margin: 30px 0;
+   letter-spacing: 5px;
+   position: relative;
+    right: 20%;
+
+}
+.tab-contents ul li span{
+    font-size: 3vw;
+}
+/* -------------------------------Project Section -----------------------*/
+
+    #project-Left .sub-title{
+        font-size:5vh;
+    }
+
+
+/*----------------------------------- Skill icons Section------------------------------------- */
+    #project-Left {
+    width: 80%;
+    }
+
+    #project-Left h1{
+        font-size: 5vh;
+    }
+
+
+    #skill-icons img{
+        width: 90%;
+    }
+
+
+/*----------------------------------- Contact me Section------------------------------------- */
+
+
+    #contact-left{
+        width: 60%;
+        right: 10%;
+    }
+    #contact-left h1{
+        font-size:4vw;
+    }
+    #contact-left i{
+        font-size: 1.5vw;
+    }
+    #contact-left p{
+        letter-spacing: 5px;
+        font-size: 1.5vw;
+    }
+
+    #contact-socail-icons i{
+        font-size: 3vh;
+    }
+    #contact-Right form{
+        width: 95%;
     }
 }
