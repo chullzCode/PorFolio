@@ -117,7 +117,7 @@ html,body{
 
     background-color: #141414; 
     height: 88vh;
-    width: 100%;
+    min-width: 100%;
     display: flex;
     align-items: center;
     text-align: center;
@@ -694,4 +694,16 @@ form input,form textarea{
     color: antiquewhite;
     font-family: detail;
     font-size: 1.5vw;
+}
+
+
+/*--------------------End OF CSS-----------------------*/
+
+
+
+
+
+/* --------------------CSS for small screens---------------------- */
+@media only screen and (max-width: 850px) {
+   
 }
