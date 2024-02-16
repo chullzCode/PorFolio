@@ -720,6 +720,7 @@ form input,form textarea{
     justify-content: center;
     background-color: #3f3f3f;
     letter-spacing: 10px;
+    cursor: default;
 }
 #copyright h2{
     color: antiquewhite;
@@ -1008,15 +1009,12 @@ form input,form textarea{
         scale: 1.050;
         text-shadow: antiquewhite 0px 20px 50px;
     }
-
-    
-    /* Social BTNs  */
-
     #socails-btn i{
         display: none;
-
-    font-size: 3vh;
     }
+
+    
+
 /* Main text on homepage  */
 
     #main h1{
@@ -1119,16 +1117,15 @@ form input,form textarea{
     #contact-Right form{
         width: 95%;
     }
-
+    #contact-Right button{
+        font-size: 3vw;
+   
+    }
 
 
 
 
 }
-
-
-
-
 
 
 
@@ -1221,50 +1218,74 @@ form input,form textarea{
 .tab-contents ul li span{
     font-size: 3vw;
 }
-/* -------------------------------Project Section -----------------------*/
-
-    #project-Left .sub-title{
-        font-size:5vh;
-    }
-
 
 /*----------------------------------- Skill icons Section------------------------------------- */
-    #project-Left {
-    width: 80%;
-    }
 
-    #project-Left h1{
-        font-size: 5vh;
+    #project-Left .sub-title{
+        font-size:7vh;
     }
 
 
-    #skill-icons img{
-        width: 90%;
-    }
+#project-Left #aboutme-detail{
+    letter-spacing: 1px;
+    font-size: 3vw;
+}
+
+
+#project-Left {
+    /* background: #726b6b; */
+    width: 100%;
+}
+#project-Left h1{
+    font-size: 8vh;
+    font-family: about;
+    margin-top: 40px;
+    /* flex-wrap: wrap; */
+    cursor: default;
+}
+#skill-icons img{
+    width: 100%;
+}
 
 
 /*----------------------------------- Contact me Section------------------------------------- */
+#contect-Me{
+    min-height: 130vh;
+    width: 100%;
+    background: #141414;
+    position: relative;
+    display: flex;
 
+}
 
     #contact-left{
-        width: 60%;
-        right: 10%;
+        width: 10%;
+        position: absolute;
+        right: 50%;
+        bottom: 30%;
     }
     #contact-left h1{
-        font-size:4vw;
+        font-size:7vw;
     }
     #contact-left i{
-        font-size: 1.5vw;
+        font-size: 3vw;
     }
     #contact-left p{
         letter-spacing: 5px;
-        font-size: 1.5vw;
+        font-size: 3.5vw;
     }
 
     #contact-socail-icons i{
-        font-size: 3vh;
+        font-size: 4vh;
     }
     #contact-Right form{
-        width: 95%;
+        position: absolute;
+        left: 10%;
+        width:70%;
+    }
+    #contact-Right button{
+        font-size: 3vw;
+        position: relative;
+        left: 30%;
     }
 }
