@@ -7,6 +7,22 @@
 
 
 
+const closeMenu = document.querySelector("#close-menu");
+const openMenu = document.querySelector("#open-menu");
+closeMenu.addEventListener("click",show)
+openMenu.addEventListener("click",close)
+function show(){
+    openMenu.style.display = "flex"
+    openMenu.style.top = "0"
+}
+function close(){
+    openMenu.style.display = "none"
+}
+
+
+
+
+
 let tabLinks = document.getElementsByClassName("tab-links")
 let tabContents = document.getElementsByClassName("tab-contents")
 
